@@ -1,0 +1,6 @@
+oh-my-posh --init --shell pwsh --config C:\terminal\mia_terminal.json | Invoke-Expression
+Import-Module -Name Terminal-Icons
+
+# Import-Module posh-git
+# Import-Module oh-my-posh
+# Set-PoshPrompt -Theme mt
