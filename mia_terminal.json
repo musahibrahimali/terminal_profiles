@@ -97,7 +97,7 @@
                         "color_background": true,
                         "display_exit_code": false,
                         "error_color": "#f1184c",
-                        "prefix": " "
+                        "prefix": ""
                     }
                 }
             ]

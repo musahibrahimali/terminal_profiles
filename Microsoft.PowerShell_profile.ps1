@@ -1,6 +1,6 @@
 using namespace System.Management.Automation
 using namespace System.Management.Automation.Language
- 
+
 if ($host.Name -eq 'ConsoleHost')
 {
     Import-Module PSReadLine
@@ -8,12 +8,11 @@ if ($host.Name -eq 'ConsoleHost')
 #Import-Module PSColors
 #Import-Module posh-git
 Import-Module -Name Terminal-Icons
-Import-Module oh-my-posh
 set-alias desktop "Desktop.ps1"
 #Set-Theme ParadoxGlucose
 #Set-PoshPrompt -theme "D:\Dropbox\poshv3.json"
 
-oh-my-posh --init --shell pwsh --config "D:\Dropbox\poshv3.json" | Invoke-Expression
+oh-my-posh init pwsh --config 'C:\Users\musah\AppData\Local\Programs\oh-my-posh\themes\pixelrobots.omp.json' | Invoke-Expression
 
 
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
@@ -694,3 +693,4 @@ Set-PSReadLineKeyHandler -Key Ctrl+Shift+t `
     [Microsoft.PowerShell.PSConsoleReadLine]::Insert("dotnet test")
     [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 }
+
